@@ -1,0 +1,27 @@
+npm i -g create-react-app
+
+create-react-app <app name>
+-----------------------------------------------------------
+/*simple snipper short cut*/
+
+imrc -- import react component
+
+cc -- class component
+
+rfc -- create a functionsl code for components 
+
+rce -- create class component 
+
+rconstru -- add constructor 
+---------------------------------------------------------
+ctrl+k+c -- commment in vs code 
+--------------------------------------------------------
+git checkout -b <branch-name> -- create new branch
+
+git checkout <brach-name> -- switch to a perticular branch 
+
+git push --set-upstream origin <branch-name>  -- create and push to branch
+
+
+
+

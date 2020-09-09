@@ -1,0 +1,14 @@
+cmd snippets
+-----------------------------------------
+cd\                         //go back to c:
+E:                          //go to diffrent one 
+md name of the folder       //to create
+cd name of the folder       //go into file 
+copy con file name + ctrl Z //to create file and save 
+dir                         //to see all files
+cis                         //clear this screen
+file.itsExtension           //type file name to read the file 
+ren                         //to rename 
+del                         //to delete
+code .                      //to open visual studio
+    
