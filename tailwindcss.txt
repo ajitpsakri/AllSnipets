@@ -1,34 +1,40 @@
-create-react-app <name of the app/folder>
+1. create-react-app <app name>
 
-create .env file and add this code =====> SKIP_PREFLIGHT_CHECK=true
+2. yarn add tailwindcss postcss-cli autoprefixer -D
 
-yarn add tailwindcss -D      //this will install tailwind for us
+3. npx tailwind init --full
 
-npx tailwind init tailwind.js --full    //inicializing tailwind and adding tailwind.js
+4. touch postcss.config.js
+ 
+5. In postcss.config.js add this code 
 
-yarn add postcss-cli autoprefixer -D
-
-touch postcss.config.js
-
-add this code to your postcss.config.js ==>
-const tailwindcss = require('tailwind');
-module.exports{
-	plugins:[tailwindcss('./tailwind.js'),require('autoprefixer')]
+module.exports = {
+    plugins: [
+        require('tailwindcss'),
+        require('autoprefixer')
+    ],
 }
-add a folder in src folder called styles and then add two files app.css and tailwind.css
-			
-add this code to tailwind.css(here you add ) file
-		@tailwind base;
-		@tailwind components;
-		@tailwind utilities;
 
-make this changes to package.jason
-  "scripts": {
-    "start": "npm run watch:css && react-scripts start",
+6. create "style" folder in src folder and add "main.css" and "tailwind.css"
+
+7. Add this code to "tailwind.css"
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+8. Add this code to package.json
+
+ "scripts": {
+    "start": "npm run build:css && react-scripts start",
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:css": "postcss src/styles/tailwind.css -o src/styles/app.css",
-    "watch:css": "postcss src/styles/tailwind.css -o src/styles/app.css -w"
+    "build:css" : "postcss src/styles/tailwind.css -o src/styles/main.css" 
   },
 
+9. yarn build:css   
+
+10.
+
+
+
+ 
