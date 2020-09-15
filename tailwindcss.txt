@@ -33,7 +33,7 @@ module.exports = {
 
 9. yarn build:css   
 
-10.
+10. when using tailwind css in a file "import main.css"
 
 
 
